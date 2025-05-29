@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="on"> 
+        <lable for="user-id"> 아이디</lable>
+        <input id="user-id" type="text">
+
+
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm">문법</li>
+            <li><input type="checkbox" value="wr">작문</li>
+            <li><input type="checkbox" value="rd">독해</li>
+        </ul>
+
+        <h3>수강 분야(1과목만 선택가능)</h3>
+        <ul>
+            <li>
+                <label><input type="radio" name="sub">영어회화</label>
+            </li>
+            <li>
+                <label><input type="radio" name="sub">중국어회화</label>
+            </li>
+            <li>
+                <label><input type="radio" name="sub">일어회화</label>
+            </li>
+        
+        </ul>
+
+
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="name">메일 주소</label>
+                    <input type="text" id="mail">
+                </li>
+                
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>input 태그의 다양한 속성들</legend>
+            <ul>
+                <li><input type="number" min="1" max="5">개</li><!--최대값과 최솟값을 정해줌-->
+                <li><input type="range" min="1" max="3"></li>
+            </ul>
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>

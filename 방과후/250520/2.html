@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: center;
+            padding : 20px;
+            margin :20px;
+
+        }
+        .profile-card{
+            margin: 40px auto;
+            background:floralwhite;
+            padding: 30px 30px;
+            border-radius: 12px;
+            justify-content: center;
+            display : center;
+
+           
+        }
+        h2{
+            color :black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: center;
+            display : center;
+            background-color: silver;
+        }
+        p{
+            font-size: 20px;
+        }
+        input,
+        textarea,
+        button{
+            
+            margin: 10px;
+            display : center;
+            margin-bottom: 14px;
+        }
+        button {
+            background: skyblue; 
+        }
+        button:hover {
+            background: slateblue;
+            transition: all 0.3s ease;
+        } 
+        button:active{
+            transform: scale(0.95);
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        
+            <h2>조유진</h2>
+            <p>프론트엔드 개발자를 꿈꾸는 학생💖</p>
+            <br>
+            <input type="text" placeholder="이름을 입력하세요" />
+            <br>
+            <input type="text" placeholder="이메일을 입력하세요" />
+            <br>
+            <textarea placeholder="자기소개를 적어주세요"></textarea>
+            <br>
+            <button>가입하기</button>
+            <h2>내 배경음악</h2>
+            <audio controls autoplay loop muted>
+                <source src ="BOYNEXTDOOR '123-78' LYRICS.mp3"  type="audio/mpeg">
+            </audio>
+        </div>
+        
+</html>

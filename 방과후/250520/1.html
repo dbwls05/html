@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 반응에따른 스타일 변경</title>
+    <style>
+        .hover-btn {
+            background-color: red;
+            color: white;
+            padding : 10px 20px;
+            border-radius: 8px;
+            border:none;
+            transition: all 0.3s ease;
+
+        }
+
+        .hover-btn:hover {
+            background-color: blue;
+            color: chartreuse;
+        }
+        .input{
+            padding:10px;
+            border : 1px solid darkorange;
+            border-radius: 5px;
+            
+
+        }
+        input:focus{
+            border : 2px solid crimson;
+            background-color: aquamarine;
+            outline: none;
+        }
+        button:active{
+            transform: scale(0.95);
+           
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="이름을 입력하세요">
+   <button class="hover-btn">가입하기</button> 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =10;
+        let b=3;
+        //산술연산자
+        let sum=a+b;
+        let diff=a-b;
+        let mul = a*b;
+        let div = a/b;
+        let mod = a%b;
+
+        //비교연산자
+        console.log(10>5);
+        console.log(3=="3"); //값만 비교
+        console.log(3==="3");  //자료형+값
+
+        let age =17;
+        if(age>=20){
+            document.write("성인입니다.   ");
+        }else {document.write("미성년자입니다.  ");}
+
+        let myScore = 85;
+        if(myScore>=90){
+            document.write("A  ");
+        } else if(myScore>=80){
+            document.write("B  ");
+        } else {
+            document.write("사람 아님.");
+        }
+
+        for(let i=1; i<=10; i++){
+            console.log(i);
+        }
+
+        
+        for(let i=1; i<=20; i++){
+            if(i%2==0){
+                document.write(i+"  "+"<br>");
+            }
+        }document.write("<br>");
+
+
+        for(let i=1; i<=9; i++){
+            for(let j=1; j<=9; j++){
+                document.write(i+" X "+j+"="+(i*j)+"<br>");
+            }
+        }
+        
+    </script>
+</body>
+</html>

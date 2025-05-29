@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        body {
+            background: #f4f8fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form {
+            max-width: 350px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 30px;
+            border-radius: 12px;
+            justify-content: center;
+            
+        }
+        h1 {
+            color: #2a5dff;
+            margin-bottom: 24px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+       label {
+            display: block;
+            margin-bottom: 1px;
+            color: #333;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 14px;
+            border: 1px solid #bfc9d1;
+            border-radius: 6px;
+            font-size: 15px;
+            
+        }
+        input[type=radio] {
+            width: auto;
+            margin: 0 5px 0 0;
+        }
+        
+        button {
+            width: 100%;
+            background: skyblue;
+            color: #fff;
+            
+            padding: 10px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            
+        } 
+        button { background: skyblue; }
+        button:hover {
+            background: #2a5dff;
+            transition: 0.3s;
+        }   
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>회원가입</h1></legend>
+            <label for="name">이름 :</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required
+            autocomplete="off">
+            <br>
+            <br>
+            <label for="id">아이디 :</label>
+            <input type="text" id="id" name="id" placeholder="아이디를 입력하세요" required
+            autocomplete="off">
+            <br>
+            <br>
+            <label for="email">이메일 : </label>
+            <input type="email" id="email" name="email" placeholder="...@gmail.com" required 
+            autocomplete="off">
+            <br>
+            <br>
+            <label for="pw">비밀번호 : </label>
+            <input type="password" id="pw" name="pw"  autocomplete="off">
+            <br>
+            <br>
+            <label for="birth">생년월일 : </label>
+            <input type="date" id="birth" name="birth" placeholder="생년월일을 입력하세요" required 
+            autocomplete="off">
+            <br>
+            <br>
+            <label for="gender">성별</label>
+            <input type="radio" id="female" name="gender" value="여자">여자
+            <input type="radio" id="male" name="gender" value="남자">남자
+            <br>
+            <br>
+            <label for="food">좋아하는 음식 : </label>
+            <select id="food" name="food">
+                <option>한식</option>
+                <option>일식</option>
+                <option>중식</option>
+                <option>양식</option>
+
+            </select>
+            <br>
+            <br>
+            <label for="text">자기소개</label>
+            <textarea placeholder="자신을 표현하는 말을 적어주세요!"></textarea>
+            <br>
+            <br>
+            <button type="submit">가입하기</button>
+            
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
